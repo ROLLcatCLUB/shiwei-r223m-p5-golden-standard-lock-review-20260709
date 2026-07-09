@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "check_count": 70,
+  "failed": 0,
+  "failures": [],
+  "stage_id": "1013R_R223M_P5_GOLDEN_STANDARD_LOCK_PACKAGE",
+  "standard_id": "GOLDEN_CLASSROOM_EVENT_EXPANSION_STANDARD_V0.1_LOCK_CANDIDATE",
+  "teacher_focus_count": 7,
+  "downstream_impact_count": 7,
+  "source_validator_checks": 59,
+  "formal_ui": "blocked"
+}
