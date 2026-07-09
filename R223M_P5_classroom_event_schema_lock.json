@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://shiwei.local/schemas/classroom_event_expansion_standard_v0_1_lock_candidate.json",
+  "title": "Golden Classroom Event Expansion Standard v0.1 Lock Candidate",
+  "type": "object",
+  "required": [
+    "stage_id",
+    "standard_id",
+    "events",
+    "boundary"
+  ],
+  "properties": {
+    "stage_id": {},
+    "standard_id": {},
+    "formal_ui": {
+      "const": false
+    },
+    "events": {
+      "type": "array",
+      "minItems": 7,
+      "items": {
+        "type": "object",
+        "required": [
+          "event_id",
+          "event_name",
+          "section",
+          "source_anchor",
+          "teaching_responsibility",
+          "student_problem",
+          "task_release",
+          "expected_student_responses",
+          "likely_misconceptions_or_failures",
+          "teacher_follow_up_questions",
+          "teacher_scaffolding_moves",
+          "teacher_rescue_strategy",
+          "screen_trigger",
+          "component_trigger",
+          "learning_sheet_trigger",
+          "evidence_trigger",
+          "assessment_alignment",
+          "transition_chain",
+          "teacher_visible_note",
+          "control_points"
+        ],
+        "properties": {
+          "event_id": {
+            "description": "Required classroom event field: event_id"
+          },
+          "event_name": {
+            "description": "Required classroom event field: event_name"
+          },
+          "section": {
+            "description": "Required classroom event field: section"
+          },
+          "source_anchor": {
+            "description": "Required classroom event field: source_anchor"
+          },
+          "teaching_responsibility": {
+            "description": "Required classroom event field: teaching_responsibility"
+          },
+          "student_problem": {
+            "description": "Required classroom event field: student_problem"
+          },
+          "task_release": {
+            "description": "Required classroom event field: task_release"
+          },
+          "expected_student_responses": {
+            "description": "Required classroom event field: expected_student_responses"
+          },
+          "likely_misconceptions_or_failures": {
+            "description": "Required classroom event field: likely_misconceptions_or_failures"
+          },
+          "teacher_follow_up_questions": {
+            "description": "Required classroom event field: teacher_follow_up_questions"
+          },
+          "teacher_scaffolding_moves": {
+            "description": "Required classroom event field: teacher_scaffolding_moves"
+          },
+          "teacher_rescue_strategy": {
+            "description": "Required classroom event field: teacher_rescue_strategy"
+          },
+          "screen_trigger": {
+            "description": "Required classroom event field: screen_trigger"
+          },
+          "component_trigger": {
+            "description": "Required classroom event field: component_trigger"
+          },
+          "learning_sheet_trigger": {
+            "description": "Required classroom event field: learning_sheet_trigger"
+          },
+          "evidence_trigger": {
+            "description": "Required classroom event field: evidence_trigger"
+          },
+          "assessment_alignment": {
+            "description": "Required classroom event field: assessment_alignment"
+          },
+          "transition_chain": {
+            "description": "Required classroom event field: transition_chain"
+          },
+          "teacher_visible_note": {
+            "description": "Required classroom event field: teacher_visible_note"
+          },
+          "control_points": {
+            "type": "object",
+            "required": [
+              "observe",
+              "ask_when",
+              "rescue_when",
+              "screen_when",
+              "component_when",
+              "evidence_when",
+              "proceed_when"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "x_lock_stage_id": "1013R_R223M_P5_GOLDEN_STANDARD_LOCK_PACKAGE",
+  "x_standard_id": "GOLDEN_CLASSROOM_EVENT_EXPANSION_STANDARD_V0.1_LOCK_CANDIDATE",
+  "x_source_schema": "R223M_P3_classroom_event_expansion_schema_v0_1.json",
+  "x_view_layers": {
+    "teacher_default_reading_layer": {
+      "accepted": true,
+      "sample": "R223M_P5_teacher_default_reading_sample_v0_1.md",
+      "visible_notes": [
+        "purpose",
+        "teacher_focus",
+        "downstream_impact"
+      ],
+      "hidden_by_default": [
+        "full_xiaojiao_judgement",
+        "full_control_points",
+        "component_trigger",
+        "source_trace"
+      ]
+    },
+    "review_ledger_layer": {
+      "accepted": true,
+      "sample": "R223M_P5_review_ledger_sample_v0_1.json",
+      "contains": [
+        "full_xiaojiao_judgement",
+        "full_control_points",
+        "screen_trigger",
+        "component_trigger",
+        "learning_sheet_trigger",
+        "evidence_trigger"
+      ]
+    }
+  },
+  "x_boundary": {
+    "preview_only": true,
+    "teacher_confirmed": false,
+    "formal_apply_allowed": false,
+    "r97b_modified": false,
+    "ui_modified": false,
+    "runtime_connected": false,
+    "provider_model_connected": false,
+    "database_written": false
+  }
+}
