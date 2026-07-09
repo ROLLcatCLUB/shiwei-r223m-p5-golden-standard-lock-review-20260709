@@ -1,0 +1,40 @@
+{
+  "stage_id": "1013R_R223M_P5_GOLDEN_STANDARD_LOCK_PACKAGE",
+  "standard_id": "GOLDEN_CLASSROOM_EVENT_EXPANSION_STANDARD_V0.1_LOCK_CANDIDATE",
+  "source_stages": {
+    "R223M_P3": {
+      "role": "classroom event expansion schema and event chain",
+      "path": "outputs\\PREP_ROOM_RENDER_CANVAS_DEEPEN_V1\\1013R_R223M_P3_STANDARD_TEMPLATE_AND_CONTROL_POINT_HARDENING"
+    },
+    "R223M_P4": {
+      "role": "R97B presentation rule integration",
+      "path": "outputs\\PREP_ROOM_RENDER_CANVAS_DEEPEN_V1\\1013R_R223M_P4_R97B_STATIC_PAGE_SIGNAL_INTEGRATION"
+    },
+    "R223M_P4_P1": {
+      "role": "teacher default reading layer accepted",
+      "path": "outputs\\PREP_ROOM_RENDER_CANVAS_DEEPEN_V1\\1013R_R223M_P4_P1_NOTE_WEIGHT_REDUCTION_AND_MARGINIZATION",
+      "validator_checks": 59,
+      "validator_failed": 0,
+      "zip_sha256": "169CB15405384AAF732D76EE427DF408D229A49B990CB9AD59ED4846FFF59C92"
+    }
+  },
+  "lock_decision": {
+    "teacher_default_reading_layer": "ACCEPTED",
+    "golden_standard": "LOCK_CANDIDATE",
+    "score": "23/25",
+    "formal_ui": "BLOCKED"
+  },
+  "boundary": {
+    "preview_only": true,
+    "teacher_confirmed": false,
+    "formal_apply_allowed": false,
+    "r97b_modified": false,
+    "ui_modified": false,
+    "frontend_backend_modified": false,
+    "runtime_connected": false,
+    "provider_model_connected": false,
+    "prompt_modified": false,
+    "database_written": false,
+    "lesson_body_written": false
+  }
+}
